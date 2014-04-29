@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.iprosis.rangeslider"
+	title="Design Studio SDK Extension Range Slider"
+	version="1.0"
+	vendor="iprosis">
+	<component
+		id="RangeSlider"
+		title="Range Slider"
+		icon="res/RangeSlider.png"
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html">
+		<jsInclude>res/js/component.js</jsInclude>
+		<cssInclude>res/css/component.css</cssInclude>
+		<property id="onChange" type="ScriptText" title="On Click" group="Events" />
+		<property type="String" title="Selected Value 1" id="SValue1" visible="false"></property>
+		<property type="String" title="Selected Value 2" id="SValue2" visible="false"></property>
+		<property type="int" title="Default Value 1" id="DValue1"></property>
+		<property type="int" title="Default Value 2" id="DValue2"></property>
+		<property type="int" title="Min Value" id="Min"></property>
+		<property type="int" title="Max Value" id="Max"></property>
+		<property type="int" title="Ticks number" id="TNumber"></property>
+		<initialization>
+			<defaultValue property="WIDTH">100</defaultValue>
+			<defaultValue property="HEIGHT">30</defaultValue>
+			<defaultValue property="DValue1">0</defaultValue>
+			<defaultValue property="DValue2">10</defaultValue>
+			<defaultValue property="Min">0</defaultValue>
+			<defaultValue property="Max">10</defaultValue>
+			<defaultValue property="TNumber">10</defaultValue>			
+		</initialization>
+	</component>
+</sdkExtension>

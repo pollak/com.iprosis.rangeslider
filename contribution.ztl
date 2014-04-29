@@ -1,0 +1,47 @@
+class com.iprosis.rangeslider.RangeSlider extends Component {
+
+	/* Returns the current value1 of the scroll. */
+	String getValue1() {*
+		return this.SValue1;
+	*}
+
+	/* Sets the current value1 of the scroll. */
+	void setValue1(/* New value */ String Value) {*
+		this.SValue1 = Value;
+	*}
+	
+	/* Returns the current value2 of the scroll. */
+	String getValue2() {*
+		return this.SValue2;
+	*}
+
+	/* Sets the current value2 of the scroll. */
+	void setValue2(/* New value */ String Value) {*
+		this.SValue2 = Value;
+	*}
+	
+	/* Returns the current max value of the scroll. */
+	String getMax() {*
+		return this.Max;
+	*}
+
+	/* Sets the current max value of the scroll. */
+	void setMax(/* New value */ String Max) {*
+		this.Max = Max;
+	*}
+	
+	/* Returns the current min value of the scroll. */
+	String getMin() {*
+		return this.Min;
+	*}
+
+	/* Sets the current min value of the scroll. */
+	void setMin(/* New value */ String Min) {*
+		this.Min = Min;
+	*}
+	
+	/* Returns the value inputString Range of the scroll. */
+	String getRange() {*
+		return this.SValue1 + " - " + this.SValue2;
+	*}
+}
